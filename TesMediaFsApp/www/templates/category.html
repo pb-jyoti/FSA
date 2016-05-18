@@ -1,0 +1,44 @@
+<!--
+  This template loads for the 'category'' state (app.js)
+-->
+<ion-view view-title="{{name}}" hide-back-button="false">
+
+    <ion-content class="has-header has-subheader has-footer"  >
+        <!-- List of items: 2 columns-->
+        <!--<div class="row flex-wrap">-->
+        <div class="row grid product-detail" ng-repeat="item in entries" >
+            <!--<a ui-sref="product({id: '{{item.id}}', name: '{{item.name}}'})">-->
+            <span class="col" id="productName">
+                {{ item.name }}
+                <img class="full-image" id="itemImage" ng-src="{{ item.primaryImage.url }}" alt="" />
+            </span>
+            <span class="col price dark" id="itemPrice" ng-if="item.price.actualPrice.amount"  ng-repeat="data in cart.items track by data.id">
+                ${{ item.price.actualPrice.amount}}
+               
+                <select  ng-model="data.quantity" ng-options="q for q in generateQuantitiesRange(data.quantity)" ng-init="origQty = data.quantity" ng-change="changeLineItem(data, origQty)"></select>
+                <button class="col add-cart" id="addBtn" ng-click="addToCart(item.id, 1)">
+                    Add to Cart
+                </button>
+            </span>
+           <!-- <span class="col old-price" ng-if="item.price.actualPrice.amount < item.price.listPrice.amount">${{ item.price.listPrice.amount }}</span>-->
+            <!--</a>-->
+            <!-- Add to cart button -->
+
+            <!--<div class="col add-cart">
+                <p class="price dark" ng-if="selectedVariation.price.actualPrice.amount">${{ selectedVariation.price.actualPrice.amount}}</p>
+                <span class="old-price" ng-if="selectedVariation.price.actualPrice.amount < selectedVariation.price.listPrice.amount">${{ item.price.listPrice.amount }}</span>
+            </div>-->
+
+
+
+            <!-- Description -->
+            <div class="linediv-l"></div>
+            <div class="padding" ng-repeat="image in selectedVariation.images">
+                <h4 class="positive">Description</h4>
+                {{ selectedVariation.description }}
+            </div>
+        </div>
+        <!--</div>-->
+        <ion-infinite-scroll ng-if="pageSettings.totalItems > pageSettings.currentPage * pageSettings.itemsPerPageCount" on-infinite="loadNextPage()" distance="5%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

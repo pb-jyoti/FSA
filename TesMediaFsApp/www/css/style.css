@@ -1,0 +1,462 @@
+/* Empty. Add your own CSS if you like */
+.active {
+    font-weight:bold;
+}
+#homebuttonDiv {
+    background-image: url(../img/Background.png);
+    height: 600px;
+    
+}
+.cursorHand {
+    cursor: pointer;
+}
+
+.logo1 {
+    /*width: 100%;
+    padding: 20px;
+    margin-right: -58px;*/
+     width: 73%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 27px;
+}
+#button icon1 {
+    margin:10px;
+}
+.logoaddtocart {
+    width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 26px;
+}
+.logocatanditem {
+
+    width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 26px;
+}
+#Welcome {
+    text-align:center;
+    padding:20px;
+}
+.logomenu{
+    width: 65.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 62px;
+
+
+}
+.logohome {
+     width: 65.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 62px;
+}
+
+
+.logoprolist {
+    width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 26px;
+}
+
+.logo2 {
+    /*width: 70%;*/
+    /*margin: 21px 0 0 86px;*/
+   width: 70%;
+    display: block;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 7px 0 0 60px;
+}
+.logo02 {
+
+    width:70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 7px 0 0 60px;
+}
+
+#logo3 {
+    width: 100px;
+}
+.logo4{
+     width: 80%;
+}
+
+#shopDiv {
+    position: absolute;
+    height: 50px;
+    width: 95%;
+    border-radius: 25px;
+    border-color: #d6355e;
+    border-width: 3px;
+    margin-left: 8px;
+    background-color: white;
+    top: 50%;
+    left: 0%;
+    margin-top:20%;
+}
+
+
+#shpicon {
+    padding: 3px 12px 3px 3px;
+
+}
+
+#time {
+    position: center;
+}
+
+.bgImage {
+    background-image: url(../img/Background.png);
+    height: 254px;
+    margin: -5px 0px 0px 0px;
+}
+
+.centerbox {
+    padding: 22px 0px 10px 36px;
+}
+
+.container {
+    width: 90%;
+    height: 215px;
+    background-color: white;
+    box-shadow: 10px 10px 5px;
+    margin: -5px;
+    border: 1px solid gray;
+}
+
+.boxHeading {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: black;
+    /*border: 1px solid blue;*/
+    text-align: center;
+}
+
+.bar {
+    background-color: #b0161d;
+    height: 100px;
+}
+
+.ion-minus, .ion-plus {
+    float: right;
+}
+
+.iconwidth {
+    width: 70%;
+    padding-top:20%;
+    margin-left:20%;
+    padding-top: 40%;
+    padding-bottom: 40%;
+}
+
+.imageSize {
+    width: 400%;
+    height: 250%;
+}
+
+
+#deleteButton {
+    float: right;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1px;
+    padding: 2px 10px 4px 10px;
+    background-color: #d6355e;
+    height: 20%;
+    margin-top: 25px;
+}
+
+#buyButton {
+    float: right;
+    border-width: 1px;
+    border-radius: 50px;
+    width: 20%;
+    height: 5%;
+    border-color: black;
+   
+    background-color: #d6355e;
+    margin-bottom: 30px;
+}
+#addBtn {
+    margin-right: 60px;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1px;
+    padding: 2px 10px 4px 10px;
+    background-color: #d6355e;
+    /* height: 20%; */
+    margin-top: 25px;
+    width: 50%;
+    width: 100px;
+    height: 30px;
+}
+.myd {
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    font-size:18px;
+    
+}
+.dropdown{
+    width: 50px !important;
+    height: 40px !important;
+     position: absolute;
+    top: 75px;
+    right: 20px;
+    background: #ffffff;
+}
+.box1{
+padding:10px;
+}
+.place{
+     margin: 30px 20px;
+
+}
+.tableplace{
+        margin: 19px 0px;
+}
+
+.myde {
+    font-size:28px;
+    text-align: center;
+}
+#myDetails {
+    padding:5px;
+    height: 60px;
+    width: 95%;
+    border-radius: 25px;
+    border-color: #d6355e;
+    border-width: 3px;
+    margin-left: 11px;
+    margin-top: 45%;
+    background-color: white;
+}
+
+#paymentCard {
+     position: absolute;
+    height: 60px;
+    width: 95%;
+    border-radius: 25px;
+    border-color: #d6355e;
+    border-width: 3px;
+    margin-left: 8px;
+    background-color: white;
+    top: 45%;
+    left: 0%;
+    
+}
+#shpicon {
+    padding: 3px 12px 3px 3px;
+
+}
+
+#shopIcon {
+    float: left;
+}
+
+.dropDown, .right {
+    float: right;
+}
+
+#dropDownBox {
+    border-color: #94B6EF;
+     padding-top: 10px;
+    width: 55px;
+    margin-left: 70%;
+}
+#quantity{
+    margin-left:60%;
+    margin-left: 40%;
+    margin-bottom: 30%;
+    
+    font-size: 22px;
+}
+.divPrice{
+    font-weight:bold;
+   font-size: 20px;
+    margin-right: 20%;
+}
+
+#dropDownOptionReg {
+    border-color: white;
+}
+
+#dropDownOption {
+    border-color: white;
+}
+
+.fileldInput {
+    border: 1px solid #ccc !important;
+    height: 20px !important;
+    width: 60px;
+    background-color: white;
+}
+#sbmitBtn {
+    /*background-color: #b0161d;
+    padding: 8px 8px 8px 32px;*/
+    /*font-family: Arial, Verdana;*/
+    /*background-image: url('../img/connect-icon.png');*/
+    /*background: #f0f0f0 url();*/
+    /*background-position: 30%;
+    background-repeat: no-repeat;
+    margin-top: 15px;*/
+    width:95%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #b0161d;
+    padding: 8px 8px 8px 32px;
+    /*font-family: Arial, Verdana;*/
+    background-image: url('../img/connect-icon.png');
+    /*background: #f0f0f0 url();*/
+    background-position: 30%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+#loginsubmitBtn {
+    background-color: #b0161d;
+    padding: 8px 8px 8px 32px;
+    /*font-family: Arial, Verdana;*/
+    background-image: url('../img/connect-icon.png');
+    /*background: #f0f0f0 url();*/
+    background-position: 30%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+#Ipswich {
+    float: right;
+    
+}
+
+#swtch {
+    float: right;
+}
+.top-buffer {
+    /*margin-top: 5%;
+    margin-left: 0;*/
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
+}
+#termCondition {
+    margin-top: 20%;
+}
+#selectCategory {
+}
+.btn {
+    background-color: #5A5757;
+    padding: 19px 8px 19px 32px;
+    width: 100%;
+}
+.grid {
+    /*border-top: 1px solid pink;*/
+    border-bottom: 2px solid pink;
+}
+/*.container{
+     width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}*/
+
+.textMargin {
+    margin-top: 20%;
+}
+.col ng-binding {
+    margin-bottom: 0px;
+}
+.textbottom-padding {
+    font-size: 22px;
+    
+    padding-bottom: 5%;
+    width: 100%;
+    margin: -6px 90% -2px 0px;
+}
+#description{
+    margin-top:0px;
+    font-size:15px;
+}
+#amount{
+    margin-top:50%;
+}
+.ion-android-arrow-dropdown {
+    margin-left: 30px;
+}
+#textColor {
+    color: white;
+}
+.home-icon {
+        margin: 4px 15px;
+}
+
+#home-icon1 {
+    
+    width: 58%;
+    margin: 0px 11px;
+}
+
+.home-icon1 {
+    margin: 1px 173px;
+}
+
+#home-icon11 {
+    width: 28%;
+    margin: -19px 32px;
+}
+#logomyaccount{
+    width: 65.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 62px;
+}
+.logomyaccount{
+    width: 55.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 9px 62px;
+}
+.buttonicon01{
+    margin:11px 11px;
+    border-color: transparent;
+    background-color: #000000;
+    color: #fff;
+}
+.buttonicon2{
+    border-color: transparent;
+    background-color: #000000;
+     color: #fff;
+}
+
+#itemImage{
+    margin-left:30px;
+    padding-top:30px;
+}
+#itemPrice{
+    margin-bottom:30px;
+    padding-top: 50%;
+    padding-left: 70px;
+
+}
+
+#productName{
+    padding-top:30px;
+    font-size:2em;
+}

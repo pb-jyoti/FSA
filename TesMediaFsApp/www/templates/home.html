@@ -1,0 +1,67 @@
+<!--
+  This template loads for the 'home' state (app.js)
+-->
+<ion-view view-title="Home">
+    <ion-nav-title>
+        <img class="logo2" src="../img/Logo2.png">
+    </ion-nav-title>
+    <ion-content class="has-header has-subheader" scroll="false">
+        <!-- Slider using slide box -->
+        <label class="dummy-image">
+            <img src="../img/dummy-image.png" width="100%" />
+        </label>
+
+        <!-- List of items: 2 columns-->
+        <div class="bgImage">
+            <div class="grid" id="homebuttonDiv">
+
+                <div class="centerbox">
+                    <div class="container">
+                        <div class="boxHeading">
+                            <b style="color:white;">SELECT A CATEGORY</b>
+                        </div>
+                        <div class="col-50" ng-repeat="item in entries">
+                            <a ui-sref="category({id: '{{item.id}}', name: '{{item.name}}'})">
+                                <span class="product-title">{{ item.name }}</span>
+                                
+                                <img class="full-image" ng-src="{{ item.images[0].url }}" alt="" />
+
+                                <span class="price dark" ng-if="!item.sale_price && item.price">${{ item.price }}</span>
+                                <span class="price dark" ng-if="item.sale_price">${{ item.sale_price}}</span>
+                                <span class="old-price" ng-if="item.sale_price">${{ item.price }}</span>
+                            </a>
+                            <div class="row" ng-repeat="(propName, props) in pallVariationPropsMa" ng-controller="categoryController">
+                               
+                                <div class="col" >
+                                    <ul>
+                                        <li ng-repeat="prop in props" >
+                                            <div  ng-click="checkProperty(prop)" ng-bind="prop.value ? prop.value : 'undef'"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--<div>
+            <select ng-if="props.length>1" ng-model="xx" ng-options="prop.value for prop in props" ng-init="xx = props[0]" ng-change="checkProperty(xx)"></select>
+        </div>-->
+                                <!--<div class="col item-input item-options">
+            <select>
+                <option>Blue</option>
+                <option selected>Green</option>
+                <option>Red</option>
+            </select>
+        </div>
+        <div class="col item-input item-options">
+            <select>
+                <option>Size S</option>
+                <option selected>Size M</option>
+                <option>Size L</option>
+            </select>
+        </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

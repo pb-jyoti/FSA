@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/ion-autocomplete/dist/ion-autocomplete.css" rel="stylesheet">
+    <!-- js libraries (ionic, angularjs, etc.)-->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ion-autocomplete/dist/ion-autocomplete.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/underscore/underscore-min.js"></script>
+    
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/cartController.js"></script>
+    <script src="js/checkoutController.js"></script>
+    
+</head>
+<body ng-app="virtoshopApp" ng-strict-di="">
+    <ion-side-menus ng-controller="HomeCtrl">
+        <!-- Center content -->
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-positive" align-title="center">
+                <!-- Back button -->
+                <ion-nav-back-button>
+                    Back
+                </ion-nav-back-button>
+              
+                <!-- Cart button -->
+                <ion-nav-buttons side="right">
+                    <button class="button button-icon button-clear ion-bag" ui-sref="cart">
+                        <span class="header-badge">{{cart.itemsCount}}</span>
+                    </button>
+                </ion-nav-buttons>
+                <ion-footer-bar class="bar bar-footer bar-dark">
+                    <div class="home-icon">
+                        <img id="home-icon1" src="../img/home-icon.png"  >
+                        <button class="buttonicon2" style="" ui-sref="home">Home</button>
+
+                    </div>
+                    <div class="home-icon1">
+                        <img id="home-icon11" src="../img/account-icon.png" >
+                        <button class="buttonicon01" style="" ui-sref="myAccount">Account</button>
+                    </div>
+                </ion-footer-bar>
+            </ion-nav-bar>
+            <!-- Main view content -->
+            <ion-nav-view animation="slide-left-right"></ion-nav-view>
+        </ion-side-menu-content>
+        <!-- Left menu -->
+        <ion-side-menu side="left" class="dark-bg">
+            <ion-content class="has-header has-subheader has-footer">
+                <!-- Search input on head of side menu -->
+                <ion-header-bar class="bar bar-light item-input-inset dark-bg">
+                    <label class="item-input-wrapper">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" placeholder="Search" ng-model="search.keyword">
+                    </label>
+                </ion-header-bar>
+                <!-- Menu -->
+                <div class="list" menu-close="">
+                    <div class="item item-icon-lef" ui-sref="home">
+                        <i class="icon ion-home"></i>
+                        Home
+                    </div>
+                    <div class="item item-icon-lef item-divider" ui-sref="category({id: &apos;{{item.id}}&apos;, name: &apos;{{item.name}}&apos;})" ng-repeat="item in entries">
+                        {{ item.name }}
+                    </div>
+                </div>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>
+</body>
+</html>

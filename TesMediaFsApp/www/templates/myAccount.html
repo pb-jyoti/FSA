@@ -1,0 +1,60 @@
+﻿<!--this page hold user details-->
+<ion-view view-title="My Account" hide-back-button="true">
+    <ion-nav-title>
+        <img class="logomyaccount" src="../img/Logo2.png">
+    </ion-nav-title>
+    <ion-pane>
+        <ion-content class="has-header has-subheader has-footer" scroll="false">
+            <div>
+                <h4 style="text-align:left;margin:20px 20px;"><u>Transaction history</u></h4>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <b> <font color="black">DATE </font> </b>
+                </div>
+                <div class="col">
+                    <b><font color="black"> ITEMS</font></b>
+                </div>
+                <div class="col">
+                    <b><font color="black"> AMOUNT</font></b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <font color="black">16 Dec 2015 </font>
+                </div>
+                <div class="col">
+                    <b><font color="black"> 1</font></b>
+                </div>
+                <div class="col">
+                    <b><font color="black"> $400</font></b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <font color="black">19 Dec 2015 </font>
+                </div>
+                <div class="col">
+                    <font color="black"> 2</font>
+                </div>
+                <div class="col">
+                    <b><font color="black"> $800</font></b>
+                </div>
+            </div>
+
+            <div id="homebuttonDiv">
+                <button class="button icon-right ion-chevron-right button-white ng-binding" id="myDetails" ui-sref="myDetails">
+                    <img align="left" id="shpicon" src="../img/info-icon.png" />
+                    <div class="myd"><b><font"black"> My Details </font></b>   </div>
+                </button>
+                <button class="button icon-right ion-chevron-right button-white ng-binding" id="paymentCard">
+                    <img align="left" id="shpicon" src="../img/Payments-icon.png" />
+                    <div class="myd"><b><font"black">Payment Card</font></b></div>
+                </button>
+
+
+            </div>
+            <!--<button class="button button-positive button-icon button-clear ion-checkmark-round" ng-click="checkOut()">Check out</button>-->
+        </ion-content>
+    </ion-pane>
+</ion-view>

@@ -1,0 +1,42 @@
+<!--
+  This template loads for the 'dcart' state (app.js)
+-->
+<ion-view view-title="Cart">
+    <ion-content class="has-header has-subheader has-footer">
+        <div class="list" ng-if="cart.items.length">
+            <div class="item item-thumbnail-left" ng-repeat="data in cart.items track by data.id">
+                <img ng-src="{{data.imageUrl}}" alt="" />
+                <h2>{{data.name}}</h2>
+                <div>
+                    <!--<i class="ion-stop positive"></i>
+                    M-->
+                    <div class="col">
+                        <select ng-model="data.quantity" ng-options="q for q in generateQuantitiesRange(data.quantity)" ng-init="origQty = data.quantity" ng-change="changeLineItem(data, origQty)"></select>
+                        <div class="trash" ng-click="removeLineItem(data.id)">
+                            <div class="col-sm-6">
+
+                                <button class="cursorHand" id="deleteButton"><font color="white">Remove</font></button>
+                            </div>
+                        </div>
+                        <div class="pull-right">{{data.extendedPrice.formatedAmount}}</div>
+                        <div class="pull-right" ng-if="data.quantity>1">{{data.placedPrice.formatedAmount}} * {{data.quantity}} =&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item stable-bg">
+                <b>Basket Total:</b>
+                <div class="pull-right">{{cart.subTotal.formatedAmount}}</div>
+            </div>
+        </div>
+        <!-- Checkout button -->
+        <div class="padding">
+            <button class="button button-block button-energized" ui-sref="checkout_address" ng-disabled="!cart.itemsCount" ng-if="cart.items.length">
+                Checkout
+            </button>
+            <div ng-if="!cart.items.length && !isUpdating" ui-sref="home" class="item stable-bg">
+                <b>Cart is empty. Continue shopping</b>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

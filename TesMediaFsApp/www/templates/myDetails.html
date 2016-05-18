@@ -1,0 +1,63 @@
+﻿ion-view view-title="My Details" hide-back-button="false">
+<ion-nav-title>
+    <img class="logo2" src="../img/Logo.png">
+    <font id="textColor">My Details</font>
+</ion-nav-title>
+<ion-pane>
+    <ion-content class="has-header has-subheader" scroll="false">
+        <div class="place">
+            <div class="myde"><font align="center">Update</font></div>
+            <!--<div class="list list-inset">-->
+            <div class="tableplace">
+                <label class="item item-input ">
+                    <i class="icon ion-person "></i>
+                    <input type="text" placeholder="First Name" ng-model="updateUserDetails.firstName">
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-person "></i>
+                    <input type="text" placeholder="Last Name" ng-model="updateUserDetails.lastName">
+                </label>
+                <label class="item item-input ">
+                    <i class="ion-email"></i>
+                    <input type="email" placeholder="Email Address" ng-model="updateUserDetails.email" required>
+                </label>
+                <label class="item item-input ">
+                    <i class="ion-locked "></i>
+                    <input type="password" placeholder="Password" ng-model="updateUserDetails.password" required>
+                </label>
+                <label class="item item-input">
+                    <i class="ion-transgender"></i>
+                    <!--<input  placeholder="Slect Gender"   >-->
+                    <select id="dropDownOption" ng-model="gender" ng-options="option.Label for option in genderOptions"></select>
+                    <!--<i class ="ion-android-arrow-dropdown"></i>-->
+                </label>
+                <label class="item item-input">
+                    <i class="ion-android-favorite"></i>
+                    <!--<input placeholder="Select age range"  />-->
+                    <select id="dropDownOption" ng-model="ageRange" ng-options="option.Label for option in ageRanges"></select>
+                    <!--<i class="ion-android-arrow-dropdown"></i>-->
+                </label>
+                <!-- </div>-->
+                <div>
+                    <button class="button button-full" id="sbmitBtn" ng-click="updateUserDetails()"><font color="white">SUBMIT</font></button>
+                </div>
+                <div id="termCondition">
+                    <center><u> T&Cs</u></center>
+                </div>
+                <!--<div id="userName">
+                    {{LoggedinUserDisplayName}}
+                </div>
+                <div>
+                    <div class="divItemcount">Total Items:{{cartCount}}</div>
+                    <div class="divPrice">Total Price:{{TotalPrice | currency:"&#8377;"}}</div>
+                </div>
+                <div class="cursorHand" ng-show="isAuthenticated" ng-click="logout()">
+                    <i class="ion-log-out "></i>
+                    Logout
+                </div>-->
+                <!--<button class="button button-positive button-icon button-clear ion-checkmark-round" ng-click="checkOut()">Check out</button>-->
+            </div>
+        </div>
+    </ion-content>
+</ion-pane>
+</ion-view>
